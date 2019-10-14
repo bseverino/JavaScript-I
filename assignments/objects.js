@@ -33,7 +33,8 @@ const kennan = {
   gender: "M",
 
   speak: function() {
-    return "Hello, my name is " + this.name + "!";
+    // return "Hello, my name is " + this.name + "!";
+    return `Hello, my name is ${this.name}!`;
   },
 }
 
@@ -102,7 +103,8 @@ const parent = {
   age: 70,
   
   speak: function() {
-    return "Hello, my name is " + this.name + "!";
+    // return "Hello, my name is " + this.name + "!";
+    return `Hello, my name is ${this.name}!`;
   },
 
   child: {
@@ -110,7 +112,8 @@ const parent = {
     age: 50,
 
     speak: function() {
-      return "Hello, my name is " + this.name + "!";
+      // return "Hello, my name is " + this.name + "!";
+      return `Hello, my name is ${this.name}!`;
     },
 
     grandchild: {
@@ -118,7 +121,8 @@ const parent = {
       age: 30,
 
       speak: function() {
-        return "Hello, my name is " + this.name + "!";
+        // return "Hello, my name is " + this.name + "!";
+        return `Hello, my name is ${this.name}!`;
       },
     } //grandchild
   } //child
@@ -134,7 +138,8 @@ console.log(parent.child.age);
 
 // Log the name and age of the grandchild
 
-console.log(parent.child.grandchild.name + ", " + parent.child.grandchild.age);
+// console.log(parent.child.grandchild.name + ", " + parent.child.grandchild.age);
+console.log(`${parent.child.grandchild.name}, ${parent.child.grandchild.age}`);
 
 // Have the parent speak
 
