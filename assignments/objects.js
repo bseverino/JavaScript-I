@@ -33,7 +33,7 @@ const kennan = {
   gender: "M",
 
   speak: function() {
-    return "Hello, my name is " + kennan.name + "!";
+    return "Hello, my name is " + this.name + "!";
   },
 }
 
@@ -102,7 +102,7 @@ const parent = {
   age: 70,
   
   speak: function() {
-    return "Hello, my name is " + parent.name + "!";
+    return "Hello, my name is " + this.name + "!";
   },
 
   child: {
@@ -110,7 +110,7 @@ const parent = {
     age: 50,
 
     speak: function() {
-      return "Hello, my name is " + parent.child.name + "!";
+      return "Hello, my name is " + this.name + "!";
     },
 
     grandchild: {
@@ -118,7 +118,7 @@ const parent = {
       age: 30,
 
       speak: function() {
-        return "Hello, my name is " + parent.child.grandchild.name + "!";
+        return "Hello, my name is " + this.name + "!";
       },
     } //grandchild
   } //child
